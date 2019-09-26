@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers</title>
+    <link rel="stylesheet"  type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h2>All customers</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>CustomerId</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Favourite icecream</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% result.forEach(customer => { %>
+                    <tr>
+                        <td><%= customer.customerId %></td>
+                        <td><%= customer.firstname %> <%= customer.lastname %></td>
+                        <td><%= customer.address %></td>
+                        <td><%= customer.favouriteicecream %></td>
+                    </tr>
+                <%}); %>
+            </tbody>
+        </table>
+        <div class="buttons">
+        <a href="/" class="myButton">Menu</a>
+        </div>
+    </main>
+</body>
+</html>

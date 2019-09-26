@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= header %>></title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="mainarea">
+    <h1><%= header %></h1>
+    <form action=" <%= action %>" method="post">
+        <p>
+            <div class="formdiv">
+            <label for="customerId">customerID:</label>
+            <input type="text" id="customerId" name="customerId"
+                    size="5" value="<%= customerId.value %>"
+                    <%= customerId.readonly %> >
+            </div>
+        </p>
+        <p>
+            <div class="formdiv">
+                <label for="firstname">Firstname:</label>
+                <input type="text" id="firstname" name="firstname"
+                    size="15" value="<%= firstname.value %>"
+                    <%= firstname.readonly %> >
+            </div>
+        </p>
+        <p>
+            <div class="formdiv">
+                <label for="lastname">Lastname:</label>
+                <input type="text" id="lastname" name="lastname"
+                size="25" value="<%= lastname.value %>"
+                <%= lastname.readonly %> >
+             </div>
+        </p>
+            <div class="formdiv">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address"
+                size="21" value="<%= address.value %>"
+                <%= address.readonly %> >
+            </div>
+        <p>
+            <div class="formdiv">
+                <label for="favouriteicecream">Favourite icecream:</label>
+                <input type="text" id="favouriteicecream" name="favouriteicecream"
+                 size="21" value="<%= favouriteicecream.value %>"
+                 <%= favouriteicecream.readonly %> >
+            </div>
+        </p>
+            <button type="submit">Submit</button>
+    </form>
+    <div class="buttons">
+            <a href="/" class="myButton">Menu</a>
+    </div>
+    </div>
+</body>
+</html>
